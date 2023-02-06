@@ -1,0 +1,301 @@
+%-------------------------
+% Resume in Latex
+% Author : Nuruzzaman Milon
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeCertificate}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Nuruzzaman Milon} \\ \vspace{2pt}
+    \small 
+        \href{tel:+491776974274}{\underline{+491776974274}} $|$ 
+        \href{mailto:contact@milon.im}{\underline{contact@milon.im}} $|$ \href{https://milon.im}{\underline{milon.im}} $|$
+        \href{https://linkedin.com/in/tomilon}{\underline{linkedin.com/in/tomilon}} $|$
+        \href{https://github.com/milon}{\underline{github.com/milon}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://amazon.com}{\underline{Amazon}}} {February 2023 -- Present}
+      {Software Development Engineer II}{Toronto, ON, Canada}
+      \resumeItemListStart
+        \resumeItem{Working as a backend engineer at Amazon Connections.}
+        \resumeItem{Used: Java, AWS, Docker, kubernetes, etc.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://flix.com}{\underline{Flix}}} {January 2020 -- February 2023}
+      {Senior Full-Stack Software Engineer}{Berlin, Germany}
+      \resumeItemListStart
+        \resumeItem{Managing network inventory, generating rides, and managing vehicle circulations for Flixbus and Flixtrain network in 38 countries on 4 continents.}
+        \resumeItem{Creating own navigation system for the bus drivers in the FlixDriver app.}
+        \resumeItem{Build lost and found reporting system right in the FlixDriver app.}
+        \resumeItem{Used: PHP, Symfony, Java, Kotlin, React Native, Kafka, SQS, MySQL, Docker, AWS, Kubernetes, Gitlab CI, React, TypeScript, etc.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {\href{https://urbansportsclub.com}{\underline{Urban Sports Club}}}{July 2019 -- December 2019}
+      {Senior Software Engineer}{Berlin, Germany}
+      \resumeItemListStart
+        \resumeItem{Create a multi-currency payment system to adopt new payment gateways for faster growth in multiple countries.}
+        \resumeItem{Leading the team, responsible for financing, payment and GDPR compliance.}
+        \resumeItem{Used: PHP, Symfony, Phalcon, MySQL, RabbitMQ, Redis, AWS, etc.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{http://check24.de}{\underline{Check24}}}{May 2018 -- June 2019}
+      {Senior Software Engineer}{Münster, Germany}
+      \resumeItemListStart
+        \resumeItem{Working on the Autoteile team to develop and maintain tires, car parts, and insurance portal for more than 10 million customers.}
+        \resumeItem{Used: PHP, Symfony, MySQL, Doctrine, React, Elasticsearch, etc.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {\href{https://telenorhealth.com}{\underline{Telenor Health}}}{May 2016 -- April 2018}
+      {Senior Software Engineer}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Created a digital healthcare solution that serves affordable health services (medications, information, insurance, etc.) to more than 5.5 million people.}
+        \resumeItem{Managed a team of 4 developers, 3 interns, 1 QA, and 1 DevOps.}
+        \resumeItem{Created high traffic system to serve 3000 req/s.}
+        \resumeItem{Used: PHP, Laravel, Lumen, Node.js, Express.js, PostgreSQL, Docker, AWS, Ansible, Angular, XMPP, etc.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {\href{https://wedevs.com}{\underline{WeDevs Ltd.}}}{February 2015 -- April 2016}
+      {Software Engineer}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Creating the Rx71 health service, which includes Health articles, symptom checker, doctor and hospital directory with booking, diet plan services, etc.}
+        \resumeItem{Manage a team of 6 developers, 2 SQA and, 1 DevOps, play the role of interim CTO for 3 months.}
+        \resumeItem{Used: PHP, Laravel, Lumen, WordPress, MySQL, Angular, IonicJS, socket.io, etc.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {\href{https://brotecs.com}{\underline{Brotecs Technologies Ltd.}}}{September 2013 -- January 2015}
+      {Software Engineer}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Building VoIP calling app for both native Android and iOS operating systems.}
+        \resumeItem{Creating web GUI for maintaining Asterisk PABX server.}
+        \resumeItem{Creating airplane entertainment module for SAP-212 hardware device to enable call, email, and web browsing.}
+        \resumeItem{Used: PHP, CodeIgniter, Android SDK, Objective C, Angular, Asterisk, etc.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://itmedicus.com}{\underline{ITMedicus Bangladesh Ltd.}}}{February 2011 -- August 2013}
+      {Programmer and System Analyst}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Write and manage codebase, database, product design, and handle clients.}
+        \resumeItem{Creating full-fledged telemedicine software for supporting custom hardware to provide quality health care in rural areas.}
+        \resumeItem{Used: PHP, MySQL, Redis, jQuery, bootstrap, etc.}
+      \resumeItemListEnd
+     
+  \resumeSubHeadingListEnd
+
+%-----------BOOKS-----------
+\section{Books}
+  \resumeSubHeadingListStart    
+    \resumeSubheading
+      {\textbf{Laravel PHP Web Framework}}{May 2015}
+      {Dimik Publication (ISBN: 978-984-33-9190-2)} {}
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Mawlana Bhashani Science and Technology University}{Tangail, Bangladesh}
+      {Bsc Engineering in Information and Communication Technology (ICT)}{April 2009 -- August 2013}
+      \resumeItemListStart
+        \resumeItem{President, Society of ICT}
+        \resumeItem{Chief Organizer, 1st MBSTU ICT Fest}
+        \resumeItem{Member, Rotary Club of MBSTU}
+      \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \resumeItemListStart
+      \resumeItem{PHP, Python, Node, Java}
+      \resumeItem{Laravel, Symfony, ReactJS, VueJS}
+      \resumeItem{HTML5, CSS3, JavaScript, Typescript}
+      \resumeItem{Microservices, REST}
+      \resumeItem{Agile, Scrum, Kanban}
+      \resumeItem{PostgreSQL, MySQL, SQLite, MongoDB, Redis, Elasticsearch}
+      \resumeItem{Kafka, Beanstalkd, IronMQ, RabbitMQ}
+      \resumeItem{PHPUnit, Pest, PHPSpec, Codeception, Behat, Jest}
+      \resumeItem{Nginx, Apache}
+      \resumeItem{Amazon AWS(EC2, S3, RDS, SQS), Google Cloud Services}
+      \resumeItem{Git, SVN}
+      \resumeItem{Test Driven Development(TDD), Domain Driven Design(DDD)}
+      \resumeItem{Docker, Kubernetes, Jenkins, Ansible}
+    \resumeItemListEnd
+ \end{itemize}
+ 
+
+%-----------Certifications-----------
+\section{Certifications}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+      \resumeItemListStart
+        \resumeItem{\href{https://exam.laravelcert.com/is/nuruzzaman-milon/certified-since/2018-01-08}{\underline{Certified Laravel Developer}} -- 2018}
+        \resumeItem{\href{https://bcert.me/swoqnnlks}{\underline{Certified Scrum Professional - Developer}} -- 2018}
+        \resumeItem{\href{https://bcert.me/swajseym}{\underline{Certified Scrum Professional - ScrumMaster}} -- 2017}
+        \resumeItem{\href{https://bcert.me/segniwpnm}{\underline{Advanced Certified Scrum Developer}} -- 2017}
+        \resumeItem{\href{https://bcert.me/skctlvko}{\underline{Certified Scrum Developer}} -- 2017}
+        \resumeItem{\href{https://bcert.me/snynrkpl}{\underline{Certified ScrumMaster}} -- 2016}
+      \resumeItemListEnd
+  \end{itemize}
+
+%-----------Miscellaneous-----------
+\section{miscellaneous}
+    \resumeSubHeadingListStart
+        \resumeSubItem{\textbf{Language}}
+            \resumeItemListStart
+                \resumeItem{English (C1 level)}
+                \resumeItem{Bengali (Mother tongue)}
+                \resumeItem{German (A2 level)}
+            \resumeItemListEnd
+
+        \resumeSubItem{\textbf{Personality}}
+            \resumeItemListStart
+                \resumeItem{\href{https://www.16personalities.com/profiles/3db6b8e4630d9}{\underline{ESTJ-A (Assertive Executive)}}}
+            \resumeItemListEnd
+        
+        \resumeSubItem{\textbf{About Me}}
+            \resumeItemListStart
+                \resumeItem{Bestseller author}
+                \resumeItem{Opensource contributor and evangelist}
+                \resumeItem{Conference speaker}
+                \resumeItem{Managing the largest PHP community of Bangladesh- \href{https://web.facebook.com/groups/pxperts}{\underline{phpXperts}}}
+                \resumeItem{Managing the largest JavaScript community of Bangladesh- \href{https://www.facebook.com/groups/talkjs.net}{\underline{Talk.js}}}
+                \resumeItem{Blood Donor}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
