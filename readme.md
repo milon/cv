@@ -8,3 +8,7 @@ This is Nuruzzaman Milon's CV. It is written in LaTeX. This is heavily inspired 
 docker build -t latex .
 docker run --rm -i -v "$PWD":/data latex pdflatex Nuruzzaman_Milon_cv.tex
 ```
+
+## Preview
+
+CV can be viewed [here](/Nuruzzaman_Milon_cv.pdf).
