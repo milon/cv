@@ -57,7 +57,7 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure that generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -71,15 +71,15 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{\large #1} \small{\textit{#4}} & #2 \\
-      \textit{#3}
+      \textbf{\large{#1}} \small{\textit{#4}} & #2 \\
+      \textsl{#3}
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \item
+    \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textsl{#1} & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -117,7 +117,7 @@
     \textbf{\Huge \scshape \href{https://milon.im}{Nuruzzaman Milon}} \\ \vspace{2pt}
     \small 
         \textbf{
-            \faMapMarker \enspace Toronto, ON, Canada  $|$
+            \faMapMarker \enspace Vancouver, BC, Canada  $|$
             \href{tel:+14375572235}{\faMobile \enspace +1 (437) 557 2235} $|$ 
             \href{mailto:contact@milon.im}{\faEnvelopeO \enspace contact@milon.im}
         }
@@ -145,12 +145,18 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {\href{https://amazon.com}{\underline{Amazon}}} {February 2023 -- June 2023}
-      {Software Development Engineer II}{Toronto, ON, Canada}
+      {\href{https://amazon.com}{\underline{Amazon}}} {December 2023 -- Present}
+      {Software Development Engineer II}{Vancouver, BC, Canada}
       \resumeItemListStart
-        \resumeItem{Working as a software engineer at Amazon Connections in the User Experience Tech team.}
+        \resumeItem{Working as a software engineer at Amazon Gift Card in the Gift Card Fulfillment and Delivery Charter team.}
         \resumeItem{Used: Java, Typescript, React, AWS, etc.}
       \resumeItemListEnd
+
+      \resumeSubSubheading
+        {Software Development Engineer II \small{\textit{Toronto, ON, Canada}}}{February 2023 -- November 2023}
+        \resumeItemListStart
+           \resumeItem{Working as a software engineer at Amazon Connections in the UX Tech team.}
+        \resumeItemListEnd
 
     \resumeSubheading
       {\href{https://flix.com}{\underline{Flix}}} {January 2020 -- February 2023}
@@ -162,16 +168,6 @@
         \resumeItem{Used: PHP, Laravel, Symfony, Java, Kotlin, React Native, Kafka, SQS, MySQL, Docker, AWS, Kubernetes, Gitlab CI, React, TypeScript, etc.}
       \resumeItemListEnd
       
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
     \resumeSubheading
       {\href{https://urbansportsclub.com}{\underline{Urban Sports Club}}}{July 2019 -- December 2019}
       {Senior Software Engineer}{Berlin, Germany}
