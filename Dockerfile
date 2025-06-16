@@ -1,5 +1,5 @@
 FROM ubuntu:22.04
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -q && apt-get install -qy \
     texlive-full \
