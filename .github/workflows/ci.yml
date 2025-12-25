@@ -1,10 +1,16 @@
 name: CV-CI
 
-on: [push]
+on:
+  push:
+    branches: [main, master]
+    tags: ['*']
+  workflow_dispatch:
 
 jobs:
   build-cv:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -24,9 +30,3 @@ jobs:
     
     - name: Generate PDF
       run: docker run --rm -v "$(pwd):/data" latex-cv:latest Nuruzzaman_Milon_cv.tex
-    
-    - name: Upload PDF artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: cv-pdf
-        path: Nuruzzaman_Milon_cv.pdf
