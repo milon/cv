@@ -9,8 +9,21 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+    
+    - name: Build Docker image
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        push: false
+        load: true
+        tags: latex-cv:latest
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
+    
     - name: Generate PDF
-      run: make
+      run: docker run --rm -v "$(pwd):/data" latex-cv:latest Nuruzzaman_Milon_cv.tex
     
     - name: Upload PDF artifact
       uses: actions/upload-artifact@v4
