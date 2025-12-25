@@ -3,12 +3,17 @@ name: CV-CI
 on: [push]
 
 jobs:
-  awesome-cv-job:
+  build-cv:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - name: Compile LaTeX
-      uses: xu-cheng/latex-action@v3
+    
+    - name: Generate PDF
+      run: make
+    
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v3
       with:
-        root_file: Nuruzzaman_Milon_cv.tex
+        name: cv-pdf
+        path: Nuruzzaman_Milon_cv.pdf
