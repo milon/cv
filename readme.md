@@ -14,28 +14,25 @@ This is my professional CV written in LaTeX. The template is inspired by [Shoura
 ## Prerequisites
 
 - Docker installed on your system
+- Make installed on your system
 - Basic knowledge of LaTeX (only if you want to modify the template)
 
 ## How to Generate PDF
 
-1. First, build the Docker image (only needed once):
+Simply run:
 ```bash
-docker build -t latex-cv .
+make
 ```
 
-2. Generate the PDF:
-```bash
-docker run --rm -v "$(pwd):/data" latex-cv Nuruzzaman_Milon_cv.tex
-```
+This will automatically build the Docker image (if needed) and generate the PDF.
 
 The generated PDF will be available as `Nuruzzaman_Milon_cv.pdf` in the current directory.
 
-### Command Explanation
+### Available Make Commands
 
-- `--rm`: Removes the container after the compilation is complete
-- `-v "$(pwd):/data"`: Mounts the current directory to `/data` in the container
-- `latex-cv`: The name of the Docker image
-- `Nuruzzaman_Milon_cv.tex`: The LaTeX source file
+- `make` or `make all` - Builds the Docker image (if needed) and generates the PDF
+- `make build` - Builds the Docker image manually
+- `make clean` - Removes build artifacts (`.aux`, `.log`, etc.)
 
 ## Preview
 
