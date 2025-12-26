@@ -56,28 +56,4 @@ jobs:
         prerelease: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
-    - name: Update latest tag
-      run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-        git tag -f latest ${{ github.sha }}
-        git push origin latest --force
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
-    - name: Create/Update Latest Release
-      uses: softprops/action-gh-release@v1
-      with:
-        files: Nuruzzaman_Milon_cv.pdf
-        tag_name: latest
-        name: CV Latest
-        body: |
-          Latest CV generated on ${{ steps.date.outputs.formatted_date }}
-          
-          Commit: ${{ github.sha }}
-        draft: false
-        prerelease: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
