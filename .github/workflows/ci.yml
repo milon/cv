@@ -34,16 +34,17 @@ jobs:
     - name: Format date
       id: date
       run: |
-        DATE="${{ github.event.head_commit.date || github.event.repository.pushed_at || github.event.repository.updated_at }}"
-        FORMATTED_DATE=$(date -d "$DATE" +"%d-%m-%Y %H:%M:%S" 2>/dev/null || echo "$DATE")
+        TAG_DATE=$(date +"%d-%m-%Y-%H-%M-%S")
+        FORMATTED_DATE=$(date +"%d-%m-%Y %H:%M:%S")
+        echo "tag_date=$TAG_DATE" >> $GITHUB_OUTPUT
         echo "formatted_date=$FORMATTED_DATE" >> $GITHUB_OUTPUT
     
     - name: Create Release
       uses: softprops/action-gh-release@v1
       with:
         files: Nuruzzaman_Milon_cv.pdf
-        tag_name: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || steps.date.outputs.formatted_date }}
-        name: CV ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || steps.date.outputs.formatted_date }}
+        tag_name: ${{ steps.date.outputs.tag_date }}
+        name: CV ${{ steps.date.outputs.formatted_date }}
         body: |
           CV generated on ${{ steps.date.outputs.formatted_date }}
           
