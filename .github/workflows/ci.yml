@@ -66,3 +66,19 @@ jobs:
         git push origin latest --force
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Create/Update Latest Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: Nuruzzaman_Milon_cv.pdf
+        tag_name: latest
+        name: CV Latest
+        body: |
+          Latest CV generated on ${{ steps.date.outputs.formatted_date }}
+          
+          Commit: ${{ github.sha }}
+        draft: false
+        prerelease: false
+        make_latest: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
