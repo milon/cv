@@ -31,25 +31,24 @@ jobs:
     - name: Generate PDF
       run: docker run --rm -v "$(pwd):/data" latex-cv:latest Nuruzzaman_Milon_cv.tex
     
-    - name: Create Release
+    - name: Format date
+      id: date
       run: |
         DATE="${{ github.event.head_commit.date || github.event.repository.pushed_at || github.event.repository.updated_at }}"
-        FORMATTED_DATE=$(date -d "$DATE" +"%B %d, %Y at %I:%M %p UTC" 2>/dev/null || echo "$DATE")
-        TAG_NAME="${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || 'latest' }}"
-        RELEASE_NAME="CV ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || 'Latest' }}"
-        cat > release_body.txt << EOF
-        CV generated on $FORMATTED_DATE
-        
-        Commit: ${{ github.sha }}
-        EOF
-        gh release create "$TAG_NAME" \
-          --title "$RELEASE_NAME" \
-          --notes-file release_body.txt \
-          Nuruzzaman_Milon_cv.pdf \
-          --repo "${{ github.repository }}" \
-          || gh release edit "$TAG_NAME" \
-          --title "$RELEASE_NAME" \
-          --notes-file release_body.txt \
-          --repo "${{ github.repository }}"
+        FORMATTED_DATE=$(date -d "$DATE" +"%d-%m-%Y %H:%M:%S" 2>/dev/null || echo "$DATE")
+        echo "formatted_date=$FORMATTED_DATE" >> $GITHUB_OUTPUT
+    
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        files: Nuruzzaman_Milon_cv.pdf
+        tag_name: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || steps.date.outputs.formatted_date }}
+        name: CV ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || steps.date.outputs.formatted_date }}
+        body: |
+          CV generated on ${{ steps.date.outputs.formatted_date }}
+          
+          Commit: ${{ github.sha }}
+        draft: false
+        prerelease: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
