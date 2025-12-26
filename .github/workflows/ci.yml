@@ -35,7 +35,7 @@ jobs:
       id: date
       run: |
         TAG_DATE=$(date +"%Y-%m-%d-%H-%M-%S")
-        FORMATTED_DATE=$(date +"%Y-%m-%d-%H-%M-%S")
+        FORMATTED_DATE=$(date +"%Y-%m-%d %H:%M:%S")
         echo "tag_date=$TAG_DATE" >> $GITHUB_OUTPUT
         echo "formatted_date=$FORMATTED_DATE" >> $GITHUB_OUTPUT
     
@@ -44,7 +44,7 @@ jobs:
       with:
         files: Nuruzzaman_Milon_cv.pdf
         tag_name: ${{ steps.date.outputs.tag_date }}
-        name: CV-${{ steps.date.outputs.tag_date }}
+        name: CV ${{ steps.date.outputs.tag_date }}
         body: |
           CV generated on ${{ steps.date.outputs.formatted_date }}
           
