@@ -1,6 +1,6 @@
 # Nuruzzaman Milon's CV
 
-This is my professional CV written in LaTeX. The template is inspired by [Shourabh Bajaj's CV](https://github.com/sb2nov/resume) with customizations to better represent my experience and skills.
+This is my professional CV written in LaTeX.
 
 ## Features
 
@@ -20,6 +20,7 @@ This is my professional CV written in LaTeX. The template is inspired by [Shoura
 ## How to Generate PDF
 
 Simply run:
+
 ```bash
 make
 ```
@@ -37,6 +38,10 @@ The generated PDF will be available as `Nuruzzaman_Milon_cv.pdf` in the current 
 ## Preview
 
 You can view the compiled CV [here](/Nuruzzaman_Milon_cv.pdf).
+
+## Download
+
+You can download the latest version of the CV from [here](https://github.com/milon/cv/releases/latest).
 
 ## License
 
