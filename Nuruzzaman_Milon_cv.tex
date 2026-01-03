@@ -65,15 +65,15 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{1.5pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{\large{#1}} \small{\textit{#4}} & #2 \\
-      \textsl{#3}
+      \textbf{\large{\underline{#1}}} \footnotesize{\textit{#4}} & #2 \\
+      \textbf{#3}
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
+\newcommand{\resumeSubSubheading}[3]{
     \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textsl{#1} & #2 \\
+      \textbf{#1} \ifx\relax#2\relax\else\small{\textit{#2}}\fi & #3 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -144,7 +144,7 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {\href{https://diamondinteractive.ca}{\underline{Diamond Interactive}}} {January 2025 -- Present}
+      {\href{https://diamondinteractive.ca}{Diamond Interactive}} {January 2025 -- Present}
       {Senior Software Engineer}{Vancouver, BC, Canada}
       \resumeItemListStart
         \resumeItem{Rewrote the entire legacy admin panel, replacing it with a modern alternative for two sweepstakes casino platforms: chanced.com and punt.com.}
@@ -155,7 +155,7 @@
       \resumeItemListEnd
     
     \resumeSubheading
-      {\href{https://amazon.com}{\underline{Amazon Development Centre Canada}}} {December 2023 -- December 2024}
+      {\href{https://amazon.com}{Amazon Development Centre Canada}} {December 2023 -- December 2024}
       {Software Development Engineer II}{Vancouver, BC, Canada}
       \resumeItemListStart
         \resumeItem{Contributed as a Software Engineer on the Gift Card Fulfillment and Delivery Charter team, focusing on Amazon Gift Cards.}
@@ -164,13 +164,13 @@
       \resumeItemListEnd
 
       \resumeSubSubheading
-        {Software Development Engineer II \small{\textit{Toronto, ON, Canada}}}{February 2023 -- November 2023}
+        {Software Development Engineer II}{Toronto, ON, Canada}{February 2023 -- November 2023}
         \resumeItemListStart
            \resumeItem{Worked as a software engineer at Amazon Connections in the UX Tech team.}
         \resumeItemListEnd
 
     \resumeSubheading
-      {\href{https://flix.com}{\underline{Flix}}} {January 2020 -- January 2023}
+      {\href{https://flix.com}{Flix}} {January 2020 -- January 2023}
       {Senior Software Engineer}{Berlin, Germany}
       \resumeItemListStart
         \resumeItem{Managed network inventory, generated rides, and oversaw vehicle circulations for the Flixbus and Flixtrain networks across 38 countries on 4 continents.}
@@ -180,7 +180,7 @@
       \resumeItemListEnd
       
     \resumeSubheading
-      {\href{https://urbansportsclub.com}{\underline{Urban Sports Club}}}{July 2019 -- December 2019}
+      {\href{https://urbansportsclub.com}{Urban Sports Club}} {July 2019 -- December 2019}
       {Senior Software Engineer}{Berlin, Germany}
       \resumeItemListStart
         \resumeItem{Created a multi-currency payment system to integrate new payment gateways, facilitating faster growth.}
@@ -189,7 +189,7 @@
     \resumeItemListEnd
 
     \resumeSubheading
-      {\href{http://check24.de}{\underline{Check24}}}{May 2018 -- June 2019}
+      {\href{http://check24.de}{Check24}} {May 2018 -- June 2019}
       {Senior Software Engineer}{Münster, NRW, Germany}
       \resumeItemListStart
         \resumeItem{Developed and maintained tires, car parts, and insurance portals for the Autoteile team, serving over 10 million customers.}
@@ -197,7 +197,7 @@
       \resumeItemListEnd
       
     \resumeSubheading
-      {\href{https://telenorhealth.com}{\underline{Telenor Health}}}{May 2016 -- April 2018}
+      {\href{https://telenorhealth.com}{Telenor Health}} {May 2016 -- April 2018}
       {Senior Software Engineer}{Dhaka, Bangladesh}
       \resumeItemListStart
         \resumeItem{Created a digital healthcare solution providing affordable health services (medications, information, insurance, etc.) to over 5.5 million people.}
@@ -209,7 +209,7 @@
       \resumeItemListEnd
       
     \resumeSubheading
-      {\href{https://wedevs.com}{\underline{WeDevs Ltd.}}}{February 2015 -- April 2016}
+      {\href{https://wedevs.com}{WeDevs Ltd.}} {February 2015 -- April 2016}
       {Software Engineer}{Dhaka, Bangladesh}
       \resumeItemListStart
         \resumeItem{Developed the Rx71 health service, featuring health articles, a symptom checker, and a doctor and hospital directory with booking and diet plan services.}
@@ -218,7 +218,7 @@
       \resumeItemListEnd
       
     \resumeSubheading
-      {\href{https://brotecs.com}{\underline{Brotecs Technologies Ltd.}}}{September 2013 -- January 2015}
+      {\href{https://brotecs.com}{Brotecs Technologies Ltd.}} {September 2013 -- January 2015}
       {Software Engineer}{Dhaka, Bangladesh}
       \resumeItemListStart
         \resumeItem{Built VoIP calling applications for native Android and iOS operating systems.}
@@ -228,7 +228,7 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {\href{https://itmedicus.com}{\underline{ITMedicus Bangladesh Ltd.}}}{February 2011 -- August 2013}
+      {\href{https://itmedicus.com}{ITMedicus Bangladesh Ltd.}} {February 2011 -- August 2013}
       {Programmer and System Analyst}{Dhaka, Bangladesh}
       \resumeItemListStart
         \resumeItem{Wrote and managed the codebase, database, and product design; also handled direct client communications.}
