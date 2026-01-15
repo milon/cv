@@ -54,7 +54,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+    \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generated pdf is machine readable/ATS parsable
@@ -63,32 +63,32 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeSubheading}[4]{
-  \vspace{1.5pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{\large{\underline{#1}}} \footnotesize{\textit{#4}} & #2 \\
-      \textbf{#3}
-    \end{tabular*}\vspace{-7pt}
+    \vspace{1.6pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{\large{\underline{#1}}} \footnotesize{\textit{#4}} & #2 \\[3pt]
+            \textbf{#3}
+        \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[3]{
     \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} \ifx\relax#2\relax\else\small{\textit{#2}}\fi & #3 \\
-    \end{tabular*}\vspace{-7pt}
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{#1} \ifx\relax#2\relax\else\small{\textit{#2}}\fi & #3 \\
+        \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \small#1 & #2 \\
+        \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeCertificate}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \small#1 & #2 \\
+        \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\item#1\vspace{-4pt}}
@@ -100,9 +100,9 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
 }
 
 %-------------------------------------------
@@ -115,18 +115,17 @@
 \begin{center}
     \textbf{\Huge \scshape \href{https://milon.im}{Nuruzzaman Milon}} \\ \vspace{3pt}
     \small 
-        \textbf{
-            \faMapMarker \enspace Vancouver, BC, Canada  $|$
-            \href{tel:+16047357681}{\faMobile \enspace +1 (604) 735 7681} $|$ 
-            \href{mailto:contact@milon.im}{\faEnvelopeO \enspace contact@milon.im}
-        }
-        \\
-        \vspace{2pt}
-        \href{https://milon.im}{\faGlobe \enspace https://milon.im} $|$
-        \href{https://linkedin.com/in/tomilon}{\faLinkedinSquare \enspace linkedin.com/in/tomilon} $|$
-        \href{https://github.com/milon}{\faGithub \enspace github.com/milon} $|$
-        \href{https://twitter.com/to_milon}{\faTwitter \enspace twitter.com/to\_milon}
-        
+    \textbf{
+        \faMapMarker \enspace Vancouver, BC, Canada  $|$
+        \href{tel:+16047357681}{\faMobile \enspace +1 (604) 735 7681} $|$ 
+        \href{mailto:contact@milon.im}{\faEnvelopeO \enspace contact@milon.im}
+    }
+    \\
+    \vspace{2pt}
+    \href{https://milon.im}{\faGlobe \enspace https://milon.im} $|$
+    \href{https://linkedin.com/in/tomilon}{\faLinkedinSquare \enspace linkedin.com/in/tomilon} $|$
+    \href{https://github.com/milon}{\faGithub \enspace github.com/milon} $|$
+    \href{https://twitter.com/to_milon}{\faTwitter \enspace twitter.com/to\_milon}
 \end{center}
 
 %--------PROFESSIONAL SUMMARY----------
@@ -141,159 +140,166 @@
 
 %-----------EXPERIENCE-----------
 \section{Work Experience}
-  \resumeSubHeadingListStart
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {\href{https://diamondinteractive.ca}{Diamond Interactive}} {January 2026 -- Present}
+            {Engineering Tech Lead}{Vancouver, BC, Canada}
+            \resumeItemListStart
+                \resumeItem{Lead the engineering team responsible for the sweepstakes casino, overseeing the entire backend API suite and admin panel.}
+                \resumeItem{Spearheaded platform expansion into new markets, including Canada and Europe, driving international growth and market penetration.}
+                \resumeItem{Drive code quality improvements and architectural decisions, establishing best practices and technical standards across the engineering organization.}
+            \resumeItemListEnd
+        
+        \resumeSubSubheading
+            {Senior Software Engineer}{}{January 2025 -- December 2025}
+            \resumeItemListStart
+                \resumeItem{Rewrote the entire legacy admin panel, replacing it with a modern alternative for two sweepstakes casino platforms: chanced.com and punt.com.}
+                \resumeItem{Optimized the entire backend API suite to handle 16k concurrent users.}
+                \resumeItem{Migrated the entire backend API suite to the latest versions of Laravel and PHP, enhancing system performance, security, and maintainability.}
+                \resumeItem{Developed a new fraud detection mechanism for the user redemption workflow, resulting in a 38\% reduction in fraudulent activities.}
+                \resumeItem{Implemented a new load testing infrastructure capable of simulating up to 25k concurrent users, ensuring every new feature maintained performance and stability.}
+                \resumeItem{Technologies: PHP, Laravel, PostgreSQL, Redis, React, Docker, AWS, k6}
+            \resumeItemListEnd
+        
+        \resumeSubheading
+            {\href{https://amazon.com}{Amazon}} {December 2023 -- December 2024}
+            {Software Development Engineer II}{Vancouver, BC, Canada}
+            \resumeItemListStart
+                \resumeItem{Contributed as a Software Engineer on the Gift Card Fulfillment and Delivery Charter team, focusing on Amazon Gift Cards.}
+                \resumeItem{Migrated the entire Gift Card Organization's email suite to Amazon's new templating system.}
+                \resumeItem{Technologies: Java, TypeScript, React, AWS}
+            \resumeItemListEnd
 
-    \resumeSubheading
-      {\href{https://diamondinteractive.ca}{Diamond Interactive}} {January 2025 -- Present}
-      {Senior Software Engineer}{Vancouver, BC, Canada}
-      \resumeItemListStart
-        \resumeItem{Rewrote the entire legacy admin panel, replacing it with a modern alternative for two sweepstakes casino platforms: chanced.com and punt.com.}
-        \resumeItem{Optimized the entire backend API suite to handle 16k concurrent users.}
-        \resumeItem{Developed a new fraud detection mechanism for the user redemption workflow, resulting in a 38\% reduction in fraudulent activities.}
-        \resumeItem{Implemented a new load testing infrastructure capable of simulating up to 25k concurrent users, ensuring every new feature maintained performance and stability.}
-        \resumeItem{Technologies: PHP, Laravel, PostgreSQL, Redis, React, Docker, AWS, k6}
-      \resumeItemListEnd
-    
-    \resumeSubheading
-      {\href{https://amazon.com}{Amazon}} {December 2023 -- December 2024}
-      {Software Development Engineer II}{Vancouver, BC, Canada}
-      \resumeItemListStart
-        \resumeItem{Contributed as a Software Engineer on the Gift Card Fulfillment and Delivery Charter team, focusing on Amazon Gift Cards.}
-        \resumeItem{Migrated the entire Gift Card Organization's email suite to Amazon's new templating system.}
-        \resumeItem{Technologies: Java, TypeScript, React, AWS}
-      \resumeItemListEnd
+        \resumeSubSubheading
+            {Software Development Engineer II}{Toronto, ON, Canada}{February 2023 -- November 2023}
+            \resumeItemListStart
+                \resumeItem{Worked as a software engineer at Amazon Connections in the UX Tech team.}
+            \resumeItemListEnd
 
-      \resumeSubSubheading
-        {Software Development Engineer II}{Toronto, ON, Canada}{February 2023 -- November 2023}
-        \resumeItemListStart
-           \resumeItem{Worked as a software engineer at Amazon Connections in the UX Tech team.}
-        \resumeItemListEnd
+        \resumeSubheading
+            {\href{https://flix.com}{Flix}} {January 2020 -- January 2023}
+            {Senior Software Engineer}{Berlin, Germany}
+            \resumeItemListStart
+                \resumeItem{Managed network inventory, generated rides, and oversaw vehicle circulations for the Flixbus and Flixtrain networks across 38 countries on 4 continents.}
+                \resumeItem{Developed a proprietary navigation system for bus drivers within the FlixDriver app, eliminating external dependencies.}
+                \resumeItem{Built a lost and found reporting system directly within the FlixDriver app, reducing lost baggage claims by 44\%.}
+                \resumeItem{Technologies: PHP, Laravel, Symfony, Java, Kotlin, React Native, Kafka, SQS, MySQL, Docker, AWS, Kubernetes, GitLab CI, React, TypeScript}
+            \resumeItemListEnd
+            
+        \resumeSubheading
+            {\href{https://urbansportsclub.com}{Urban Sports Club}} {July 2019 -- December 2019}
+            {Senior Software Engineer}{Berlin, Germany}
+            \resumeItemListStart
+                \resumeItem{Created a multi-currency payment system to integrate new payment gateways, facilitating faster growth.}
+                \resumeItem{Led the team, with responsibility for financing, payments, and GDPR compliance.}
+                \resumeItem{Technologies: PHP, Laravel, Symfony, Phalcon, MySQL, RabbitMQ, Redis, AWS}
+            \resumeItemListEnd
 
-    \resumeSubheading
-      {\href{https://flix.com}{Flix}} {January 2020 -- January 2023}
-      {Senior Software Engineer}{Berlin, Germany}
-      \resumeItemListStart
-        \resumeItem{Managed network inventory, generated rides, and oversaw vehicle circulations for the Flixbus and Flixtrain networks across 38 countries on 4 continents.}
-        \resumeItem{Developed a proprietary navigation system for bus drivers within the FlixDriver app, eliminating external dependencies.}
-        \resumeItem{Built a lost and found reporting system directly within the FlixDriver app, reducing lost baggage claims by 44\%.}
-        \resumeItem{Technologies: PHP, Laravel, Symfony, Java, Kotlin, React Native, Kafka, SQS, MySQL, Docker, AWS, Kubernetes, GitLab CI, React, TypeScript}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {\href{https://urbansportsclub.com}{Urban Sports Club}} {July 2019 -- December 2019}
-      {Senior Software Engineer}{Berlin, Germany}
-      \resumeItemListStart
-        \resumeItem{Created a multi-currency payment system to integrate new payment gateways, facilitating faster growth.}
-        \resumeItem{Led the team, with responsibility for financing, payments, and GDPR compliance.}
-        \resumeItem{Technologies: PHP, Laravel, Symfony, Phalcon, MySQL, RabbitMQ, Redis, AWS}
-    \resumeItemListEnd
+        \resumeSubheading
+            {\href{http://check24.de}{Check24}} {May 2018 -- June 2019}
+            {Senior Software Engineer}{Münster, NRW, Germany}
+            \resumeItemListStart
+                \resumeItem{Developed and maintained tires, car parts, and insurance portals for the Autoteile team, serving over 10 million customers.}
+                \resumeItem{Technologies: PHP, Symfony, Laravel, MySQL, Doctrine, React, Elasticsearch}
+            \resumeItemListEnd
+            
+        \resumeSubheading
+            {\href{https://telenorhealth.com}{Telenor Health}} {May 2016 -- April 2018}
+            {Senior Software Engineer}{Dhaka, Bangladesh}
+            \resumeItemListStart
+                \resumeItem{Created a digital healthcare solution providing affordable health services (medications, information, insurance, etc.) to over 5.5 million people.}
+                \resumeItem{Managed a team comprising 4 developers, 3 interns, 1 QA, and 1 DevOps specialist.}
+                \resumeItem{Developed a high-traffic SMS gateway capable of handling 3k req/s and enabling inter-app communication via HTTP.}
+                \resumeItem{Developed a comprehensive CMS for distributing healthcare information to 10 million people.}
+                \resumeItem{Developed a custom tool for queue management, monitoring, and report generation.}
+                \resumeItem{Technologies: PHP, Laravel, Lumen, Node.js, Express.js, PostgreSQL, Jenkins, Docker, AWS, Ansible, Angular, XMPP}
+            \resumeItemListEnd
+            
+        \resumeSubheading
+            {\href{https://wedevs.com}{WeDevs Ltd.}} {February 2015 -- April 2016}
+            {Software Engineer}{Dhaka, Bangladesh}
+            \resumeItemListStart
+                \resumeItem{Developed the Rx71 health service, featuring health articles, a symptom checker, and a doctor and hospital directory with booking and diet plan services.}
+                \resumeItem{Managed a team of 6 developers, 2 SQA, and 1 DevOps; served as interim CTO for 3 months.}
+                \resumeItem{Technologies: PHP, Laravel, Lumen, WordPress, MySQL, Angular, IonicJS, socket.io}
+            \resumeItemListEnd
+            
+        \resumeSubheading
+            {\href{https://brotecs.com}{Brotecs Technologies Ltd.}} {September 2013 -- January 2015}
+            {Software Engineer}{Dhaka, Bangladesh}
+            \resumeItemListStart
+                \resumeItem{Built VoIP calling applications for native Android and iOS operating systems.}
+                \resumeItem{Developed a web-based GUI for maintaining the Asterisk PABX server.}
+                \resumeItem{Created airplane entertainment module for SAP-212 hardware device to enable call, email, and web browsing.}
+                \resumeItem{Technologies: PHP, CodeIgniter, Android SDK, Objective-C, Angular, Asterisk}
+            \resumeItemListEnd
 
-    \resumeSubheading
-      {\href{http://check24.de}{Check24}} {May 2018 -- June 2019}
-      {Senior Software Engineer}{Münster, NRW, Germany}
-      \resumeItemListStart
-        \resumeItem{Developed and maintained tires, car parts, and insurance portals for the Autoteile team, serving over 10 million customers.}
-        \resumeItem{Technologies: PHP, Symfony, Laravel, MySQL, Doctrine, React, Elasticsearch}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {\href{https://telenorhealth.com}{Telenor Health}} {May 2016 -- April 2018}
-      {Senior Software Engineer}{Dhaka, Bangladesh}
-      \resumeItemListStart
-        \resumeItem{Created a digital healthcare solution providing affordable health services (medications, information, insurance, etc.) to over 5.5 million people.}
-        \resumeItem{Managed a team comprising 4 developers, 3 interns, 1 QA, and 1 DevOps specialist.}
-        \resumeItem{Developed a high-traffic SMS gateway capable of handling 3k req/s and enabling inter-app communication via HTTP.}
-        \resumeItem{Developed a comprehensive CMS for distributing healthcare information to 10 million people.}
-        \resumeItem{Developed a custom tool for queue management, monitoring, and report generation.}
-        \resumeItem{Technologies: PHP, Laravel, Lumen, Node.js, Express.js, PostgreSQL, Jenkins, Docker, AWS, Ansible, Angular, XMPP}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {\href{https://wedevs.com}{WeDevs Ltd.}} {February 2015 -- April 2016}
-      {Software Engineer}{Dhaka, Bangladesh}
-      \resumeItemListStart
-        \resumeItem{Developed the Rx71 health service, featuring health articles, a symptom checker, and a doctor and hospital directory with booking and diet plan services.}
-        \resumeItem{Managed a team of 6 developers, 2 SQA, and 1 DevOps; served as interim CTO for 3 months.}
-        \resumeItem{Technologies: PHP, Laravel, Lumen, WordPress, MySQL, Angular, IonicJS, socket.io}
-      \resumeItemListEnd
-      
-    \resumeSubheading
-      {\href{https://brotecs.com}{Brotecs Technologies Ltd.}} {September 2013 -- January 2015}
-      {Software Engineer}{Dhaka, Bangladesh}
-      \resumeItemListStart
-        \resumeItem{Built VoIP calling applications for native Android and iOS operating systems.}
-        \resumeItem{Developed a web-based GUI for maintaining the Asterisk PABX server.}
-        \resumeItem{Created airplane entertainment module for SAP-212 hardware device to enable call, email, and web browsing.}
-        \resumeItem{Technologies: PHP, CodeIgniter, Android SDK, Objective-C, Angular, Asterisk}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {\href{https://itmedicus.com}{ITMedicus Bangladesh Ltd.}} {February 2011 -- August 2013}
-      {Programmer and System Analyst}{Dhaka, Bangladesh}
-      \resumeItemListStart
-        \resumeItem{Wrote and managed the codebase, database, and product design; also handled direct client communications.}
-        \resumeItem{Developed full-fledged telemedicine software to support custom hardware, providing quality healthcare in rural areas.}
-        \resumeItem{Technologies: PHP, MySQL, Redis, jQuery, Bootstrap}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+        \resumeSubheading
+            {\href{https://itmedicus.com}{ITMedicus Bangladesh Ltd.}} {February 2011 -- August 2013}
+            {Programmer and System Analyst}{Dhaka, Bangladesh}
+            \resumeItemListStart
+                \resumeItem{Wrote and managed the codebase, database, and product design; also handled direct client communications.}
+                \resumeItem{Developed full-fledged telemedicine software to support custom hardware, providing quality healthcare in rural areas.}
+                \resumeItem{Technologies: PHP, MySQL, Redis, jQuery, Bootstrap}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 
 %-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Mawlana Bhashani Science and Technology University}{Tangail, Bangladesh}
-      {Bsc Engineering in Information and Communication Technology (ICT)}{}
-      \resumeItemListStart
-        \resumeItem{President, Society of ICT}
-        \resumeItem{Chief Organizer, 1st MBSTU ICT Fest}
-        \resumeItem{Member, Rotary Club of MBSTU}
-      \resumeItemListEnd
-        
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Mawlana Bhashani Science and Technology University}{Tangail, Bangladesh}
+            {Bsc Engineering in Information and Communication Technology (ICT)}{}
+            \resumeItemListStart
+                \resumeItem{President, Society of ICT}
+                \resumeItem{Chief Organizer, 1st MBSTU ICT Fest}
+                \resumeItem{Member, Rotary Club of MBSTU}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 
 %-----------BOOKS-----------
 \section{Books}
-  \resumeSubHeadingListStart    
-    \resumeSubheading
-      {\textbf{Laravel PHP Web Framework}}{May 2015}
-      {Dimik Publication (ISBN: 978-984-33-9190-2)} {}
-      \resumeItemListStart
-        \resumeItem{Published 2 editions, both of which became best-sellers in Bangladesh and West Bengal, India.}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {\textbf{Laravel PHP Web Framework}}{May 2015}
+            {Dimik Publication (ISBN: 978-984-33-9190-2)} {}
+            \resumeItemListStart
+                \resumeItem{Published 2 editions, both of which became best-sellers in Bangladesh and West Bengal, India.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
     \resumeItemListStart
-      \resumeItem{\textbf{Programming Languages:} PHP, Java, Python, Node}
-      \resumeItem{\textbf{Frameworks/Libraries:} Laravel, Symfony, ReactJS, VueJS}
-      \resumeItem{\textbf{Web Technologies:} HTML5, CSS3, JavaScript, Typescript}
-      \resumeItem{\textbf{Architecture/APIs:} Microservices, REST, GraphQL}
-      \resumeItem{\textbf{Project Management:} Agile, Scrum, Kanban}
-      \resumeItem{\textbf{Databases:} PostgreSQL, MySQL, SQLite, MongoDB, Redis, Elasticsearch, DynamoDB}
-      \resumeItem{\textbf{Message Queues:} Kafka, Beanstalkd, IronMQ, RabbitMQ}
-      \resumeItem{\textbf{Testing:} PHPUnit, Pest, PHPSpec, Codeception, Behat, Jest}
-      \resumeItem{\textbf{Web Servers:} Nginx, Apache, Caddy}
-      \resumeItem{\textbf{Cloud Platforms:} Amazon AWS, Google Cloud Services, Microsoft Azure}
-      \resumeItem{\textbf{Version Control:} Git, Jujustu, SVN}
-      \resumeItem{\textbf{Methodologies:} Test-Driven Development (TDD), Domain-Driven Design (DDD)}
-      \resumeItem{\textbf{DevOps Tools:} Docker, Kubernetes, Jenkins, Ansible}
+        \resumeItem{\textbf{Programming Languages:} PHP, Java, Python, Node}
+        \resumeItem{\textbf{Frameworks/Libraries:} Laravel, Symfony, ReactJS, VueJS}
+        \resumeItem{\textbf{Web Technologies:} HTML5, CSS3, JavaScript, Typescript}
+        \resumeItem{\textbf{Architecture/APIs:} Microservices, REST, GraphQL}
+        \resumeItem{\textbf{Project Management:} Agile, Scrum, Kanban}
+        \resumeItem{\textbf{Databases:} PostgreSQL, MySQL, SQLite, MongoDB, Redis, Elasticsearch, DynamoDB}
+        \resumeItem{\textbf{Message Queues:} Kafka, Beanstalkd, IronMQ, RabbitMQ}
+        \resumeItem{\textbf{Testing:} PHPUnit, Pest, PHPSpec, Codeception, Behat, Jest}
+        \resumeItem{\textbf{Web Servers:} Nginx, Apache, Caddy}
+        \resumeItem{\textbf{Cloud Platforms:} Amazon AWS, Google Cloud Services, Microsoft Azure}
+        \resumeItem{\textbf{Version Control:} Git, Jujustu, SVN}
+        \resumeItem{\textbf{Methodologies:} Test-Driven Development (TDD), Domain-Driven Design (DDD)}
+        \resumeItem{\textbf{DevOps Tools:} Docker, Kubernetes, Jenkins, Ansible}
     \resumeItemListEnd
  
 
 %-----------Certifications-----------
 \section{Certifications}
-      \resumeItemListStart
+    \resumeItemListStart
         \resumeItem{\href{https://exam.laravelcert.com/is/nuruzzaman-milon/certified-since/2018-01-08}{\underline{Certified Laravel Developer}} -- 2018}
         \resumeItem{\href{https://bcert.me/swoqnnlks}{\underline{Certified Scrum Professional - Developer}} -- 2018}
         \resumeItem{\href{https://bcert.me/swajseym}{\underline{Certified Scrum Professional - ScrumMaster}} -- 2017}
         \resumeItem{\href{https://bcert.me/segniwpnm}{\underline{Advanced Certified Scrum Developer}} -- 2017}
         \resumeItem{\href{https://bcert.me/skctlvko}{\underline{Certified Scrum Developer}} -- 2017}
         \resumeItem{\href{https://bcert.me/snynrkpl}{\underline{Certified ScrumMaster}} -- 2016}
-      \resumeItemListEnd
+    \resumeItemListEnd
 
 %-----------Miscellaneous-----------
 \section{Miscellaneous}
